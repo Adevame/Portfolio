@@ -1,31 +1,64 @@
-/* Appel éléments HTML
-Par nom de balise
-*/
-h1 {
-    font-size: 40px;
-    font-style: bold;
-    color: rgba(0, 0, 0)
-}
-h2 {
-    font-style: bold;
-    font-size: 25px;
-    color: rgba(0, 0, 0)
+body {
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(6,5,87,1) 50%)
 }
 
-/*Par classe*/
-.Navigation {
+@font-face {
+    font-family: "Roboto"; 
+    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
+    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"),
+     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"), 
+     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"),
+     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"),
+     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg"); 
+}
+
+h1, h2, h4, .Navigation {
+    position: fixed;
+    color: rgb(255, 255, 255);
     font-style: bold;
+    left:25px
+}
+
+h1, h2, h4, .Navigation, .Texte {
+    font-family: "Roboto", "Arial Narrow", Arial, sans-serif
+}
+
+h1 {
+    min-width: 50%;
+    top: 0px;
+    font-size: 40px;
+    background-color: purple;
+}
+h2 {
+    min-width: 50%;
+    top: 75px;
     font-size: 25px;
-    color: rgb(255, 0, 0)
+    background-color: green;
+}
+
+h4{
+    bottom: 15px;
+    color: rgb(255,255,255);
+    background-color: aqua;    
+}
+
+ul {
+    list-style-type: none;
+}
+
+.Navigation {
+    background-color: yellow;
+    top: 40vh;
+    font-size: 25px;
 }
 
 .Texte {
+    position:absolute;
+    right: 25px;
     font-style: normal;
     font-size: 25px;
-    color: blue;
-}
-
-/*Par id*/
-#titr-ss-para {
-    transform: translateX(100px)
+    color: rgb(255,255,255);
+    background-color: red;
 }
