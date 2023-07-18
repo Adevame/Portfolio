@@ -1,7 +1,12 @@
+body, h1, h2, h4, ul, section, p, div {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    height: 100vh;
+    height: 250vh;
     background: linear-gradient(180deg, rgba(63,62,62,1) 0%, 
-    rgba(66,66,66,1) 50%, 
+    rgba(66,66,66,1) 33%, 
     rgba(116,116,116,1) 100%);
 }
 
@@ -15,45 +20,36 @@ body {
      url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg"); 
 }
 
-h1, h2, h4, .Navigation {
+h1, h2, h4, .Navigation, .haut-de-page, .social {
     position: fixed;
     font-style: bold;
     left:25px;
+    min-block-size: 50%;
 }
 
-h1, h2, h4, .Navigation, .Texte {
+h1, h2, h4, .Navigation, #A-propos, #Expériences, #Projets {
     font-family: "Roboto", "Arial Narrow", Arial, sans-serif
 }
 
 h1 {
-    min-width: 50%;
-    top: 0px;
-    font-size: 25px;
+    max-width: 50%;
+    top: 25px;
+    font-size: 32px;
 }
 
 h2 {
-    min-width: 50%;
+    max-width: 50%;
     top: 75px;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 ul {
     list-style-type: none;
 }
 
-.box{
-    
-    width: 100px;
-    height: 100px;
-    background-color: linear-gradient(180deg, rgba(63,62,62,1) 0%, 
-    rgba(66,66,66,1) 50%, 
-    rgba(116,116,116,1) 100%);
-    cursor: pointer;
-}
-
 .Navigation {
     top: 40vh;
-    font-size: 16px;
+    font-size: 22px;
     background-color: rgb(255, 255, 255);
     
     background-image: linear-gradient(180deg, #ffffff, #cccccc);
@@ -64,35 +60,52 @@ ul {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
 }
 
-.Texte {
-    position:absolute;
+.haut-de-page{
+    top: 85vh;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+@media (hover: hover) {
+    a:hover {
+        background-color: rgb(255, 255, 255);
+        background-image: linear-gradient(180deg, #686868, #323232);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent; 
+    }
+}
+
+#A-propos, #Expériences, #Projets {
+    min-block-size: 33%;
+    max-width:40%;
+    position:relative;
+    top:25px;
+    left:60%;
+
     background-color: rgb(255, 255, 255);
-    
     background-image: linear-gradient(180deg, #ffffff, #cccccc);
-    
     background-size: 100%;
     background-repeat: repeat;
-  
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    right: 25px;
     font-style: normal;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .gradient-text {
     background-color: rgb(255, 255, 255);
-    
     background-image: linear-gradient(180deg, #ffffff, #cccccc);
-    
     background-size: 100%;
     background-repeat: repeat;
-  
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
@@ -104,7 +117,5 @@ ul {
 }
 
 .social {
-    position:fixed;
     top: 65vh;
-    left: 25px;
 }
