@@ -13,11 +13,16 @@ body {
 @font-face {
     font-family: "Roboto"; 
     src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
-    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"),
-     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"), 
-     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"),
-     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"),
-     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg"); 
+    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") 
+    format("embedded-opentype"),
+     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") 
+     format("woff2"), 
+     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") 
+     format("woff"),
+     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") 
+     format("truetype"),
+     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") 
+     format("svg"); 
 }
 
 h1, h2, h4, .Navigation, .haut-de-page, .social {
@@ -101,7 +106,7 @@ a:hover {
     font-size: 22px;
 }
 
-.gradient-text {
+.gradient-text, .desc {
     background-color: rgb(255, 255, 255);
     background-image: linear-gradient(180deg, #ffffff, #cccccc);
     background-size: 100%;
@@ -118,4 +123,29 @@ a:hover {
 
 .social {
     top: 65vh;
+}
+
+.rect
+{
+    right: 25px ;
+    width: 150px;
+    height: 150px;
+    background: white;
+}
+
+.desc{
+    text-align: right;
+    margin-right: 25px;
+}
+
+#Projets a {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.AHH p{
+    position: relative;
+    text-align: right;
+    left: 25px;
 }
