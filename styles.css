@@ -25,14 +25,14 @@ body {
      format("svg"); 
 }
 
-h1, h2, h4, .navigation, #A-propos, #Expériences, #Projets {
+h1, h2, h4, .navigation, .mail, #A-propos, #Expériences, #Projets {
     font-size: 1em;
     font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
     text-size-adjust : none;
     -webkit-text-size-adjust: none;
 }
 
-.navigation, .gradient-text, .desc, #A-propos, #Expériences, #Projets {
+.navigation, .gradient-text, .desc, .mail, #A-propos, #Expériences, #Projets {
     background-color: rgb(255, 255, 255);
     background-image: linear-gradient(180deg, #ffffff, #cccccc);
     background-size: 100%;
@@ -102,13 +102,16 @@ a:hover {
     }
 }
 
-#A-propos, #Expériences, #Projets {
-    min-block-size: 10%;
+#A-propos, #Expériences, #Projets, .mail {
     max-width:33%;
     position:relative;
     top:25px;
     left:50%;
     font-size: 2vw;
+}
+
+#A-propos, #Expériences, #Projets {
+    min-block-size: 10%;
 }
 
 .projets {
@@ -126,3 +129,6 @@ a:hover {
     background: white;
 }
 
+.mail {
+    top: 75px;
+}
