@@ -1,67 +1,84 @@
-body, h1, h2, h4, ul, section, p, div {
+body,
+h1,
+h2,
+h4,
+ul,
+section,
+p,
+div {
     margin: 0;
     padding: 0;
 }
 
 body {
     height: 300vh;
-    background: linear-gradient(180deg, rgba(63,62,62,1) 0%, 
-    rgba(66,66,66,1) 33%, 
-    rgba(116,116,116,1) 100%);
+    background: linear-gradient(180deg, rgba(63, 62, 62, 1) 0%,
+            rgba(66, 66, 66, 1) 33%,
+            rgba(116, 116, 116, 1) 100%);
 }
 
 @font-face {
-    font-family: "Roboto"; 
+    font-family: "Roboto";
     src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot");
-    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") 
-    format("embedded-opentype"),
-     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") 
-     format("woff2"), 
-     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") 
-     format("woff"),
-     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") 
-     format("truetype"),
-     url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") 
-     format("svg"); 
+    src: url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg");
 }
 
-h1, h2, h4, .navigation, .mail, #A-propos, #Expériences, #Projets {
+h1,
+h2,
+h4,
+.navigation,
+.mail,
+#A-propos,
+#Expériences,
+#Projets {
     font-size: 1em;
     font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
-    text-size-adjust : none;
+    text-size-adjust: none;
     -webkit-text-size-adjust: none;
 }
 
-.navigation, .gradient-text, .desc, .mail, #A-propos, #Expériences, #Projets {
-    background-color: rgb(255, 255, 255);
-    background-image: linear-gradient(180deg, #ffffff, #cccccc);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  }
+.navigation,
+.gradient-text,
+.desc,
+.mail,
+#A-propos,
+#Expériences,
+#Projets {
+    background-color: rgb(255, 255, 255) !important;
+    background-image: linear-gradient(180deg, #ffffff, #cccccc) !important;
+    background-size: 100% !important;
+    background-repeat: repeat !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -moz-background-clip: text !important;
+    -moz-text-fill-color: transparent !important;
+}
 
-h1, h2, h4, .navigation, .haut-de-page, .social {
+h4 {
     max-block-size: 15%;
     position: fixed;
     font-style: bold;
-    left:25px;
+    left: 25px;
 }
 
-.intro{
+.intro {
     min-height: fit-content;
     max-height: fit-content;
 }
 
 h1 {
-    top:25px;
+    position: relative;
+    top: 15px;
     font-size: calc(2vw + 1em);
 }
 
 h2 {
-    top: 75px;
+    position: relative;
+    top: 25px;
     font-size: calc(1vw + 1em);
 }
 
@@ -70,21 +87,24 @@ ul {
 }
 
 .navigation {
-    top: 250px;
+    position: relative;
+    top: 50px;
     font-size: 2vw;
     max-height: 50%;
 }
 
-.social a{
+.social a {
     text-decoration: none;
 }
 
 .social {
-    top: 400px;
+    position: relative;
+    top: 100px;
 }
 
-.haut-de-page{
-    top: 475px;
+.haut-de-page {
+    position: relative;
+    top: 175px;
 }
 
 a:hover {
@@ -96,21 +116,30 @@ a:hover {
         background-color: rgb(255, 255, 255);
         background-image: linear-gradient(180deg, #686868, #323232);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; 
+        -webkit-text-fill-color: transparent;
         -moz-background-clip: text;
-        -moz-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
     }
 }
 
-#A-propos, #Expériences, #Projets, .mail {
-    max-width:33%;
-    position:relative;
-    top:25px;
-    left:50%;
+.droite {
+    display: inline-block;
+    vertical-align: top;
     font-size: 2vw;
 }
 
-#A-propos, #Expériences, #Projets {
+#A-propos,
+#Expériences,
+#Projets,
+.mail {
+    left: 20%;
+    max-width: 50%;
+    position: relative;
+}
+
+#A-propos,
+#Expériences,
+#Projets {
     min-block-size: 10%;
 }
 
@@ -118,11 +147,13 @@ a:hover {
     width: 100%;
     display: flex;
 }
+
 .projetp {
     flex-grow: 1;
     margin-left: 15px;
     margin-right: 25px;
 }
+
 .rect {
     width: 125px;
     height: 125px;
@@ -133,9 +164,56 @@ a:hover {
     top: 75px;
 }
 
-.js-scroll {
-    transition: opacity 500ms;
+.slide-in {
+    display: inline-block;
+    margin-left: 25px;
+    max-width: 50%;
+    min-height: 500px;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-.js-scroll.scrolled {
+
+.slide-in.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.slide-inP {
+    position: relative;
+    top: 25px;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.slide-inP.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.slide-inE {
+    position: relative;
+    top: 25px;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.slide-inE.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.slide-inPr {
+    position: relative;
+    top: 25px;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+}
+
+.slide-inPr.active {
+    transform: translateX(0%);
     opacity: 1;
 }
