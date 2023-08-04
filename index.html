@@ -55,34 +55,48 @@
             </section>
         </div>
         <br>
-        <section id="Projets">
-            <p class="gradient-text">Projets</p>
-            <br>
-            <div class="projets">
-                <a href="https://www.pole-emploi.fr/accueil/">
-                    <div class="rect"></div>
-                </a>
-                <p class="projetp">Site Pôle emploi</p>
-            </div>
-            <br>
-            <div class="projets">
-                <a href="https://developer.mozilla.org/fr/">
-                    <div class="rect"></div>
-                </a>
-                <p class="projetp">Site Mozilla Dev</p>
-            </div>
-            <br>
-            <div class="projets">
-                <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">
-                    <div class="rect"></div>
-                </a>
-                <p class="projetp">Site Wikipédia</p>
-            </div>
-        </section>
-        <section class="mail">
-            <p>Contactez-moi par mail :</p>
-            <p>czarnynoga.quentins@gmail.com</p>
-        </section>
+        <div class="slide-inPr">
+            <section id="Projets">
+                <p class="gradient-text">Projets</p>
+                <br>
+                <div class="projets">
+                    <a href="https://www.pole-emploi.fr/accueil/">
+                        <div class="rect"></div>
+                    </a>
+                    <p class="projetp">Site Pôle emploi</p>
+                </div>
+                <br>
+                <div class="projets">
+                    <a href="https://developer.mozilla.org/fr/">
+                        <div class="rect"></div>
+                    </a>
+                    <p class="projetp">Site Mozilla Dev</p>
+                </div>
+                <br>
+                <div class="projets">
+                    <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">
+                        <div class="rect"></div>
+                    </a>
+                    <p class="projetp">Site Wikipédia</p>
+                </div>
+            </section>
+        </div>
+        <br>
+        <div class="slide-inForm">
+            <form action="/my-handling-form-page" method="post">
+                <div>
+                    <label class="gradient-text" for="nom">Entrez votre nom/prenom : </label>
+                    <input type="text" name="Nom/Prénom" id="nom" required>
+                    <br>
+                    <label class="gradient-text" for="adrM">Entrez votre adresse mail : </label>
+                    <input type="email" name="Adresse Mail" id="adrM" required>
+                    <br>
+                    <label class="gradient-text" for="demand">Spécifiez rapidement le type de votre demande : </label>
+                    <textarea type="text" name="Demande" id="demand" required></textarea>
+                </div>
+                <button id="button" type="submit">Envoyer</button>
+            </form>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

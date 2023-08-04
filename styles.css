@@ -11,6 +11,7 @@ div {
 }
 
 body {
+    max-width: 1024px;
     height: 300vh;
     background: linear-gradient(180deg, rgba(63, 62, 62, 1) 0%,
             rgba(66, 66, 66, 1) 33%,
@@ -27,11 +28,28 @@ body {
         url("//db.onlinewebfonts.com/t/0033a2fbc0329740fb86c1cfd134cb94.svg#Roboto") format("svg");
 }
 
+@media (max-width: 812px) {
+    .droite {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 2vw;
+        max-width: 45%;
+    }
+
+    .slide-inP,
+    .slide-inPr,
+    .slide-inE,
+    .slide-inForm {
+        max-width: 80%;
+        left: calc(812px*0.5);
+    }
+
+}
+
 h1,
 h2,
 h4,
 .navigation,
-.mail,
 #A-propos,
 #Expériences,
 #Projets {
@@ -126,6 +144,7 @@ a:hover {
     display: inline-block;
     vertical-align: top;
     font-size: 2vw;
+    max-width: 45%;
 }
 
 #A-propos,
@@ -133,7 +152,6 @@ a:hover {
 #Projets,
 .mail {
     left: 20%;
-    max-width: 50%;
     position: relative;
 }
 
@@ -160,14 +178,56 @@ a:hover {
     background: white;
 }
 
-.mail {
-    top: 75px;
+form {
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1vw;
+    font-size: 2vw;
+    font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+
+label {
+    display: inline-block;
+    width: auto;
+    text-align: left;
+}
+
+input,
+textarea {
+    font-size: 1vw;
+    font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+#button {
+    font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
 }
 
 .slide-in {
     display: inline-block;
+    position: fixed;
     margin-left: 25px;
-    max-width: 50%;
+    max-width: 45%;
     min-height: 500px;
     transform: translateX(-100%);
     opacity: 0;
@@ -177,6 +237,14 @@ a:hover {
 .slide-in.active {
     transform: translateX(0%);
     opacity: 1;
+}
+
+.slide-inP,
+.slide-inPr,
+.slide-inE,
+.slide-inForm {
+    max-width: 80%;
+    left: calc(1024px*0.66);
 }
 
 .slide-inP {
@@ -214,6 +282,19 @@ a:hover {
 }
 
 .slide-inPr.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.slide-inForm {
+    position: relative;
+    top: 25px;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.slide-inForm.active {
     transform: translateX(0%);
     opacity: 1;
 }
