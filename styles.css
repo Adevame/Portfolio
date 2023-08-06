@@ -29,19 +29,26 @@ body {
 }
 
 @media (max-width: 812px) {
+    body {
+        height: 400vh;
+    }
+
+    .gradient-text {
+        font-size: 4vw;
+    }
+
     .droite {
         display: inline-block;
         vertical-align: top;
-        font-size: 2vw;
-        max-width: 45%;
+        width: 45%;
     }
 
     .slide-inP,
     .slide-inPr,
     .slide-inE,
     .slide-inForm {
-        max-width: 80%;
-        left: calc(812px*0.5);
+        width: 80%;
+        right: 250px;
     }
 
 }
