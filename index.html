@@ -3,16 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <section class="gauche">
+    <div class="slide-in">
         <h1 class="gradient-text">CZARNYNOGA QUENTIN</h1>
         <h2 class="gradient-text">Développeur web et web mobile</h2>
-    
-   
         <section class="navigation">
             <nav>
                 <ul>
@@ -24,67 +23,83 @@
                 </ul>
             </nav>
         </section>
-    </section>
-    <section id="A-propos">    
-        <p class="gradient-text">Présentation rapide et sans doute les raisons du choix 
-            de parcours <br><br><br><br><br>Fin.</p>
-    </section>
-    <br>
-    <section id="Expériences">
-        <p class="gradient-text">Présentations des différentes expériences slash
-            formations type CV <br><br><br><br><br><br><br><br><br><br><br>
-            Fin temporaire.</p>
-    </section>
-    <br>
-    <section id="Projets">
-        <p class="gradient-text">Projets</p>
-        <br>
-        <div class="projets">
-            <a href="https://www.pole-emploi.fr/accueil/">
-                <div class="rect"></div>
+        <section class="social">
+            <a href="https://github.com/Adevame">
+                <img src="./assets/img/Git.png" alt="icône github" width="55">
             </a>
-            <p class="projetp">Site Pôle emploi</p>
-        </div>
-        <br>
-        <div class="projets">
-            <a href="https://developer.mozilla.org/fr/">
-                <div class="rect"></div>      
+            <a href="https://www.figma.com/files/drafts?fuid=1255096897894784995">
+                <img src="./assets/img/Figma.png" alt="icône figma" width="50">
             </a>
-            <p class="projetp">Site Mozilla Dev</p>
-        </div>
-        <br>
-        <div class="projets">
-            <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">
-                <div class="rect"></div>  
+            <a href="https://www.linkedin.com/in/quentin-czarnynoga-060537283/">
+                <img src="./assets/img/LinkedIn.png" alt="icône linkedin" width="50">
             </a>
-            <p class="projetp">Site Wikipédia</p>
+        </section>
+        <div class="haut-de-page">
+            <a href="#">
+                <img src="./assets/img/union-1.png" width="30">
+            </a>
         </div>
-    </section>
-    <section class="social">
-        <a href="https://github.com/Adevame">
-            <img src="img/Git.png" alt="icône github"
-            width="55">
-        </a>
-        <a href="https://www.figma.com/files/drafts?fuid=1255096897894784995">
-            <img src="img/Figma.png" alt="icône figma"
-            width="50">
-        </a>
-        <a href="https://www.linkedin.com/in/quentin-czarnynoga-060537283/">
-            <img src="img/LinkedIn.png" alt="icône linkedin"
-            width="50">
-        </a>
-    </section>
-    <div class="haut-de-page">
-        <a href="#">
-        <img src="img/union-1.png"
-        width="30">
-        </a>
     </div>
-    <section class="mail">
-        <p>Contactez-moi par mail :</p>
-        <p>czarnynoga.quentins@gmail.com</p>
-    </section>
-    </body>
+    <div class="droite">
+        <div class="slide-inP">
+            <section id="A-propos">
+                <p class="gradient-text">Présentation rapide et sans doute les raisons du choix
+                    de parcours <br><br><br><br><br>Fin.</p>
+            </section>
+        </div>
+        <br>
+        <div class="slide-inE">
+            <section id="Expériences">
+                <p class="gradient-text">Présentations des différentes expériences slash
+                    formations type CV <br><br><br><br><br><br><br><br><br><br><br>
+                    Fin temporaire.</p>
+            </section>
+        </div>
+        <br>
+        <div class="slide-inPr">
+            <section id="Projets">
+                <p class="gradient-text">Projets</p>
+                <br>
+                <div class="projets">
+                    <a href="https://www.pole-emploi.fr/accueil/">
+                        <div class="rect"></div>
+                    </a>
+                    <p class="projetp">Site Pôle emploi</p>
+                </div>
+                <br>
+                <div class="projets">
+                    <a href="https://developer.mozilla.org/fr/">
+                        <div class="rect"></div>
+                    </a>
+                    <p class="projetp">Site Mozilla Dev</p>
+                </div>
+                <br>
+                <div class="projets">
+                    <a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">
+                        <div class="rect"></div>
+                    </a>
+                    <p class="projetp">Site Wikipédia</p>
+                </div>
+            </section>
+        </div>
+        <br>
+        <div class="slide-inForm">
+            <form action="/my-handling-form-page" method="post">
+                <div>
+                    <label class="gradient-text" for="nom">Entrez votre nom/prenom : </label>
+                    <input type="text" name="Nom/Prénom" id="nom" required>
+                    <br>
+                    <label class="gradient-text" for="adrM">Entrez votre adresse mail : </label>
+                    <input type="email" name="Adresse Mail" id="adrM" required>
+                    <br>
+                    <label class="gradient-text" for="demand">Spécifiez rapidement le type de votre demande : </label>
+                    <textarea type="text" name="Demande" id="demand" required></textarea>
+                </div>
+                <button id="button" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 
